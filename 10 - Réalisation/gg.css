@@ -1,0 +1,152 @@
+/* Reset & Fonts */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+  }
+  
+  /* Body */
+  body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); /* dark blue gradient */
+    color: #fff;
+    line-height: 1.6;
+    min-height: 100vh;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Header */
+  header {
+    background: rgba(0, 255, 255, 0.1); /* semi-transparent cyan */
+    backdrop-filter: blur(10px);
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    border-radius: 0 0 20px 20px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+  }
+  
+  header h1 {
+    font-size: 3rem;
+    color: #00fff7; /* bright cyan */
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    text-transform: uppercase;
+  }
+  
+  /* Navigation */
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 15px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #00fff7;
+    font-weight: 600;
+    padding: 10px 22px;
+    border-radius: 30px;
+    border: 2px solid #00fff7;
+    transition: all 0.3s ease;
+  }
+  
+  nav a:hover {
+    background: #00fff7;
+    color: #0f2027;
+    transform: scale(1.1);
+  }
+  
+  nav a[aria-current="page"] {
+    background: #00f7ff;
+    color: #0f2027;
+  }
+  
+  /* Hero Image */
+  .hero {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+  }
+  
+  .hero img {
+    width: 80%;
+    max-width: 900px;
+    border-radius: 25px;
+    border: 5px solid #00fff7;
+    box-shadow: 0 6px 25px rgba(0, 255, 255, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .hero img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 60px #00fff7;
+  }
+  
+  /* Section cards */
+  section {
+    padding: 30px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 900px;
+    background: rgba(0, 255, 255, 0.1); /* translucent cyan card */
+    backdrop-filter: blur(15px);
+    border-radius: 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  }
+  
+  section h2, section h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #00fff7;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    border-bottom: 2px solid #00fff7;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+  
+  /* Skills list as glowing buttons */
+  section ul {
+    list-style: none;
+    margin-top: 20px;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  section ul li {
+    background: #0d47a1;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 30px;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.3);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  section ul li:hover {
+    background: #00fff7;
+    color: #0f2027;
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #00fff7;
+  }
+  
+  /* Footer */
+  footer {
+    background: rgba(0, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 20px 20px 0 0;
+    font-weight: bold;
+    color: #00fff7;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.3);
+  }
+  
